@@ -9,7 +9,10 @@ def separate_string(string):
 # function for print the list
 def print_list(lst):
     for i in range(len(lst)):
-        print(f"{titles[i]}: \t\t\t {lst[i]}")
+        if len(titles[i]) <= 5:
+            print(f"{titles[i]}: \t\t\t {lst[i]}")
+        else:
+            print(f"{titles[i]}: \t\t {lst[i]}")
         
 
 # Open the file for reading
